@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+import React, { PropTypes } from 'react'
+
+export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends React.Component {
+  render () {
+    return (
+      ${0:<div></div>}
+    )
+  }
+}
+
+${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}.propTypes = {
+  
+}
+]]></content>
+    <tabTrigger>rsc</tabTrigger>
+    <scope>source.js</scope>
+    <description>React Stateful Component</description>
+</snippet>

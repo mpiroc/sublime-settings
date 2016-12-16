@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+import React, { PropTypes } from 'react'
+
+export default function ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} (props) {
+  return (
+    ${0:<div></div>}
+  )
+}
+
+${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}.propTypes = {
+  
+}
+]]></content>
+    <tabTrigger>rsfc</tabTrigger>
+    <scope>source.js</scope>
+    <description>React Stateless Functional Component</description>
+</snippet>

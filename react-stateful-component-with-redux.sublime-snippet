@@ -1,0 +1,38 @@
+<snippet>
+    <content><![CDATA[
+import React, { PropTypes } from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import {  } from 'components'
+import * as ${2:reducer}ActionCreators from 'redux/modules/${2:reducer}'
+
+class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends React.Component {
+  render () {
+    return (
+      ${0:<div></div>}
+    )
+  }
+}
+
+${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}.propTypes = {
+  
+}
+
+function mapStateToProps (state, props) {
+  return {
+  }
+}
+
+function mapDispatchToProps (dispatch, props) {
+  return bindActionCreators(${2:reducer}ActionCreators, dispatch)
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}})
+]]></content>
+    <tabTrigger>rscr</tabTrigger>
+    <scope>source.js</scope>
+    <description>React Stateful Component with Redux</description>
+</snippet>
