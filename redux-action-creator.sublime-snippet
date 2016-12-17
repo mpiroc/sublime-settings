@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+export function ${1:myActionCreator} (${3:myParamName}) {
+  return {
+    type: ${2:myActionType},
+    ${3:myParamName},
+    $0
+  }
+}
+]]></content>
+    <tabTrigger>rac</tabTrigger>
+    <scope>source.js</scope>
+    <description>Redux Action Creator</description>
+</snippet>
